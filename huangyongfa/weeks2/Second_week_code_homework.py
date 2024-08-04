@@ -24,7 +24,6 @@ import matplotlib.pyplot as plt
 # 1.数据预处理
 def build_sample():
     """
-    随机创建一个单位长度为5的向量,并且在创建成功的时候，判断第一位是否大于第五位，，要是大于第五为，则返回当前x，跟1，否则返回x，0
     :return: 返回生产的x值，标签值
     """
     # 任务一
@@ -184,9 +183,7 @@ def evaluate(model):
     print("正确预测个数：%d, 正确率：%f" % (correct, correct / (correct + wrong)))
     return correct, wrong
 
-    """
-    这里要注意，我们始终没有进行模型的训练，权重都是初始化随机的，
-    """
+# 这里要注意，我们始终没有进行模型的训练，权重都是初始化随机的，
 # 3.2模型的训练
 def main():
     # 配置好初始参数
@@ -262,7 +259,7 @@ def main():
 # 使用训练好的模型做预测
 def predict(model_path, input_vec):
     """
-
+    训练模型的函数
     :param model_path: 模型测试后的权重
     :param input_vec: 输出测试的样本数据
     :return: 拿了测试模型的权重之后，算权重之后，返回这次模型的预测结果

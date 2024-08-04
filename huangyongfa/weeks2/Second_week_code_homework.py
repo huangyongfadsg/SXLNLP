@@ -24,6 +24,7 @@ import matplotlib.pyplot as plt
 # 1.数据预处理
 def build_sample():
     """
+    数据预处理
     :return: 返回生产的x值，标签值
     """
     # 任务一
